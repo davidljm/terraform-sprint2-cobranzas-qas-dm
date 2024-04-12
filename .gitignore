@@ -1,0 +1,7 @@
+/.terraform
+.terraform.lock.hcl
+terraform.tfstate.backup
+.terraform/providers/registry.terraform.io/hashicorp/aws/**/terraform-provider-aws_*.exe
+.terraform/providers/registry.terraform.io/hashicorp/aws/*/terraform-provider-aws_*.exe
+.terraform.tfstate
+terraform.tfstate
