@@ -1,15 +1,17 @@
-variable "github_token" { }
+variable "github_token" { 
+
+}
 
 variable "github_owner" {
   description = "Propietario del repositorio en GitHub"
   type        = string
-  default     = "alkemytech" # nombre de tu usuario de github
+  default     = "davidljm" # nombre de tu usuario de github
 }
 
 variable "github_repository" {
   description = "Nombre del repositorio en GitHub"
   type        = string
-  default     = "UMSA-DevOps-T4" # nombre de tu repo de github
+  default     = "UMSA-DevOps-T4-sprint2" # nombre de tu repo de github
 }
 
 variable "ssh_private_key_secret_name" {
