@@ -67,7 +67,7 @@ resource "aws_key_pair" "ec2-server-ssh-key" {
 }
 
 # Definición de la instancia EC2
-resource "aws_instance" "COBRANZAS_dev_instance" {
+resource "aws_instance" "COBRANZAS_qas_instance" {
   ami           = var.ami_id
   instance_type = var.instance_type
 
@@ -95,5 +95,5 @@ resource "github_actions_secret" "ssh_private_key" {
 resource "github_actions_secret" "host" {
   repository      = var.github_repository
   secret_name     = var.host_secret_name
-  plaintext_value = aws_instance.COBRANZAS_dev_instance.public_ip
+  plaintext_value = aws_instance.COBRANZAS_qas_instance.public_ip
 }
